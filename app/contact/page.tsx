@@ -6,7 +6,7 @@ export default function ContactPage() {
       <header className="mb-10 text-center">
         <h1 className="text-3xl sm:text-4xl font-bold mb-4 text-[#1a2233]">Connect with Nousu for Expert B2B Lead Generation Services.</h1>
         <p className="max-w-xl mx-auto text-base sm:text-lg text-gray-700">
-          Nousu specializes in b2b lead generation services, serving Sydney-based SaaS and finance companies. Our expert team uses proven outbound strategies, including cold email and cold calling, to help businesses connect with potential clients effectively. By tailoring our approach to each client's needs, we ensure maximum results in filling your sales pipeline with qualified leads. Schedule your free consultation today and let Nousu transform your business growth with our renowned b2b lead generation services.
+          Nousu specializes in b2b lead generation services, serving Sydney-based SaaS and finance companies. Our expert team uses proven outbound strategies, including cold email and cold calling, to help businesses connect with potential clients effectively. By tailoring our approach to each client&apos;s needs, we ensure maximum results in filling your sales pipeline with qualified leads. Schedule your free consultation today and let Nousu transform your business growth with our renowned b2b lead generation services.
         </p>
       </header>
       <section className="bg-white rounded-xl shadow p-6 mb-10">

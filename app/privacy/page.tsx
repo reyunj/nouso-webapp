@@ -4,14 +4,14 @@ export default function PrivacyPolicyPage() {
   return (
     <main className="max-w-3xl mx-auto px-4 py-16 text-gray-800">
       <h1 className="text-3xl sm:text-4xl font-bold mb-6 text-[#1a2233]">Privacy Policy</h1>
-      <p className="mb-4">A privacy policy is a statement that discloses some or all of the ways a website collects, uses, discloses, and manages the data of its visitors and customers. It fulfills a legal requirement to protect a visitor or client's privacy.</p>
+      <p className="mb-4">A privacy policy is a statement that discloses some or all of the ways a website collects, uses, discloses, and manages the data of its visitors and customers. It fulfills a legal requirement to protect a visitor or client&apos;s privacy.</p>
       <p className="mb-4">Countries have their own laws with different requirements per jurisdiction regarding the use of privacy policies. Make sure you are following the legislation relevant to your activities and location.</p>
       <h2 className="text-xl font-semibold mt-8 mb-2">What should you cover in your Privacy Policy?</h2>
       <ol className="list-decimal pl-6 mb-6 space-y-1">
         <li>What type of information do you collect?</li>
         <li>How do you collect information?</li>
         <li>Why do you collect such personal information?</li>
-        <li>How do you store, use, share and disclose your site visitors' personal information?</li>
+        <li>How do you store, use, share and disclose your site visitors&apos; personal information?</li>
         <li>How (and if) do you communicate with your site visitors?</li>
         <li>Is your service targeting and collecting information from Minors?</li>
         <li>Privacy policy updates</li>

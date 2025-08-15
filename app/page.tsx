@@ -1,5 +1,6 @@
 import React from "react";
 import Head from "next/head";
+import Image from "next/image";
 
 export default function HomePage() {
   return (
@@ -88,13 +89,13 @@ export default function HomePage() {
           </div>
           {/* Right: Hero Image */}
           <div className="flex-1 w-full flex items-center justify-center md:justify-end max-w-md mb-8 md:mb-0">
-            <img
+            <Image
               src="/assets/HeroPic.png"
               alt="Team collaborating on SaaS lead generation"
               className="w-full max-w-xs sm:max-w-sm md:max-w-md h-auto object-contain rounded-xl shadow-lg"
-              loading="eager"
               width={340}
               height={260}
+              priority
             />
           </div>
         </section>
@@ -104,22 +105,22 @@ export default function HomePage() {
           <h2 className="text-2xl sm:text-3xl font-bold mb-8 text-left">Why Choose Nousu?</h2>
           <div className="grid gap-8 sm:gap-10 md:grid-cols-2 lg:grid-cols-4">
             <div className="flex flex-col items-center text-center">
-              <img src="/assets/multi-channel.png" alt="Multi-Channel Outreach" className="w-32 h-32 object-contain mb-4" loading="lazy" />
+              <Image src="/assets/multi-channel.png" alt="Multi-Channel Outreach" className="w-32 h-32 object-contain mb-4" width={128} height={128} />
               <h3 className="text-lg sm:text-xl font-semibold mb-2">Multi-Channel Outreach</h3>
               <p className="text-gray-700">We combine personalised cold email, cold calling, and LinkedIn to reach real decision-makers across SaaS and finance.</p>
             </div>
             <div className="flex flex-col items-center text-center">
-              <img src="/assets/setup-strategy.png" alt="Full Setup & Strategy" className="w-32 h-32 object-contain mb-4" loading="lazy" />
+              <Image src="/assets/setup-strategy.png" alt="Full Setup & Strategy" className="w-32 h-32 object-contain mb-4" width={128} height={128} />
               <h3 className="text-lg sm:text-xl font-semibold mb-2">Full Setup & Strategy</h3>
               <p className="text-gray-700">We handle your domain setup, warm-up, ICP research, list building, and message testing — all before launch.</p>
             </div>
             <div className="flex flex-col items-center text-center">
-              <img src="/assets/appointment.png" alt="Live Appointment Setting" className="w-32 h-32 object-contain mb-4" loading="lazy" />
+              <Image src="/assets/appointment.png" alt="Live Appointment Setting" className="w-32 h-32 object-contain mb-4" width={128} height={128} />
               <h3 className="text-lg sm:text-xl font-semibold mb-2">Live Appointment Setting</h3>
               <p className="text-gray-700">Our team calls your prospects, qualifies them, and books meetings straight into your calendar with people ready to talk.</p>
             </div>
             <div className="flex flex-col items-center text-center">
-              <img src="/assets/campaign.png" alt="Ongoing Campaign Optimisation" className="w-32 h-32 object-contain mb-4" loading="lazy" />
+              <Image src="/assets/campaign.png" alt="Ongoing Campaign Optimisation" className="w-32 h-32 object-contain mb-4" width={128} height={128} />
               <h3 className="text-lg sm:text-xl font-semibold mb-2">Ongoing Campaign Optimisation</h3>
               <p className="text-gray-700">We refine your sequences, targeting, and deliverability weekly to improve reply rates and maximise conversions.</p>
             </div>
@@ -129,11 +130,12 @@ export default function HomePage() {
         {/* Trusted Section */}
         <section className="py-8 sm:py-10 md:py-14 bg-white flex flex-col md:flex-row items-center md:justify-between max-w-7xl mx-auto px-4 gap-8 md:gap-16">
           <div className="flex-1 flex justify-center">
-            <img
+            <Image
               src="/assets/trusted.png"
               alt="Trusted by Leading Companies"
               className="w-full max-w-lg h-auto object-contain"
-              loading="lazy"
+              width={600}
+              height={160}
             />
           </div>
           <div className="flex-1 w-full max-w-xl text-left mt-8 md:mt-0">

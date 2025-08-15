@@ -6,7 +6,7 @@ export default function PricingPage() {
     <>
       <Head>
         <title>Pricing Plans | Nousu – B2B Lead Generation Agency</title>
-        <meta name="description" content="Choose from Nousu's B2B lead generation pricing plans. Transparent, all-inclusive pricing for SaaS and finance companies looking to scale pipeline." />
+        <meta name="description" content="Choose from Nousu&apos;s B2B lead generation pricing plans. Transparent, all-inclusive pricing for SaaS and finance companies looking to scale pipeline." />
         <meta property="og:title" content="Pricing Plans | Nousu – B2B Lead Generation Agency" />
         <meta property="og:description" content="Choose from Nousu's B2B lead generation pricing plans. Transparent, all-inclusive pricing for SaaS and finance companies looking to scale pipeline." />
         <meta property="og:type" content="website" />
@@ -44,6 +44,7 @@ export default function PricingPage() {
                 <li>Live appointment booking</li>
                 <li>All email addresses fully verified</li>
                 <li>Bi-weekly reporting and campaign optimisation</li>
+                <li>We&apos;ll handle your campaign setup, targeting, copywriting, and ongoing optimisation so you can focus on closing deals.</li>
                 <li>Perfect if: You want consistent pipeline</li>
               </ul>
               <a href="/book" className="inline-block px-6 py-2 bg-[#294243] text-white rounded-lg font-semibold shadow hover:bg-[#1a2233] transition-colors text-center">Get Started</a>
@@ -51,7 +52,7 @@ export default function PricingPage() {
             {/* Custom Plan */}
             <div className="bg-white rounded-xl shadow p-6 sm:p-8 flex flex-col">
               <h2 className="text-xl sm:text-2xl font-bold mb-2 text-[#1a2233]">Custom</h2>
-              <div className="text-2xl sm:text-3xl font-bold mb-1">Let's Talk</div>
+              <div className="text-2xl sm:text-3xl font-bold mb-1">Let&apos;s Talk</div>
               <p className="text-gray-700 mb-4">Need more meetings or a tailored approach? We can build a custom plan for your team.</p>
               <ul className="mb-6 space-y-2 text-gray-700 text-sm list-disc pl-4 text-left">
                 <li>Enterprise volume or multi-region targeting</li>
