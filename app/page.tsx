@@ -54,29 +54,49 @@ export default function HomePage() {
         />
       </Head>
       <main className="bg-white min-h-screen">
-        {/* Hero Section */}
-        <section className="pt-16 md:pt-20 pb-10 md:pb-16 px-4 sm:px-6 text-center bg-gradient-to-br from-[#f5f7fa] to-[#c3cfe2]">
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6 text-[#1a2233]">
-            Outreach that books revenue, not just meetings
-          </h1>
-          <p className="max-w-2xl mx-auto text-base sm:text-lg text-gray-700 mb-8">
-            Nousu specialises in B2B lead generation for SaaS and finance companies, offering cold email, cold calling, and appointment setting services in Sydney and Australia-wide.
-          </p>
-          <div className="flex flex-col sm:flex-row justify-center gap-6 sm:gap-8 flex-wrap mb-8 md:mb-10">
-            <div className="flex flex-col items-center">
-              <span className="text-xl sm:text-2xl md:text-3xl font-semibold text-[#1a2233]">2000+</span>
-              <span className="text-sm sm:text-base text-[#4a5568]">Sales Meetings Booked</span>
-            </div>
-            <div className="flex flex-col items-center">
-              <span className="text-xl sm:text-2xl md:text-3xl font-semibold text-[#1a2233]">100+</span>
-              <span className="text-sm sm:text-base text-[#4a5568]">Campaigns Launched</span>
-            </div>
-            <div className="flex flex-col items-center">
-              <span className="text-xl sm:text-2xl md:text-3xl font-semibold text-[#1a2233]">$50M+</span>
-              <span className="text-sm sm:text-base text-[#4a5568]">Pipeline Generated</span>
-            </div>
+        {/* Hero Section (Two-Column) */}
+        <section className="max-w-7xl mx-auto px-4 py-12 md:py-20 flex flex-col md:flex-row items-center md:justify-between">
+          {/* Left: Text Content */}
+          <div className="flex-1 text-left max-w-xl">
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#1a2233] mb-6 leading-tight">
+              B2B Lead Generation<br />for SaaS and Finance Companies
+            </h1>
+            <p className="mb-6 text-gray-700 text-base md:text-lg max-w-md">
+              Nousu helps SaaS and finance companies scale faster with outbound <a href="/services" className="text-[#294243] underline hover:text-[#1a2233]">lead generation</a>. We handle your <a href="/services" className="text-[#294243] underline hover:text-[#1a2233]">cold email</a>, <a href="/services" className="text-[#294243] underline hover:text-[#1a2233]">cold calling</a>, and <a href="/services" className="text-[#294243] underline hover:text-[#1a2233]">appointment setting</a> all under one roof. No outsourcing, just booked meetings with real buyers.
+            </p>
+            <a
+              href="/book"
+              className="inline-block px-6 py-3 bg-black text-white font-semibold rounded shadow hover:bg-[#294243] transition mb-8 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#294243]"
+            >
+              Book a Free Strategy Call
+            </a>
+            {/* Features */}
+            <ul className="flex flex-wrap gap-6 mt-4">
+              <li className="flex items-center gap-2 text-gray-800 text-sm">
+                <span className="inline-block"><svg width="24" height="24" fill="none" aria-hidden="true"><rect width="24" height="24" rx="4" fill="#E5E7EB"/><path d="M8 12.5l3 3 5-5" stroke="#000" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/></svg></span>
+                Qualified Appointments
+              </li>
+              <li className="flex items-center gap-2 text-gray-800 text-sm">
+                <span className="inline-block"><svg width="24" height="24" fill="none" aria-hidden="true"><rect width="24" height="24" rx="4" fill="#E5E7EB"/><path d="M12 7v10M7 12h10" stroke="#000" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/></svg></span>
+                Flexibility &amp; Scalability
+              </li>
+              <li className="flex items-center gap-2 text-gray-800 text-sm">
+                <span className="inline-block"><svg width="24" height="24" fill="none" aria-hidden="true"><rect width="24" height="24" rx="4" fill="#E5E7EB"/><path d="M8 12h8M8 16h8M8 8h8" stroke="#000" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/></svg></span>
+                Better Collaboration
+              </li>
+            </ul>
           </div>
-          <a href="/book" className="inline-block mt-4 px-6 sm:px-8 py-2.5 sm:py-3 bg-[#294243] text-white rounded-lg font-semibold shadow hover:bg-[#1a2233] transition-colors">Book a Strategy Call</a>
+          {/* Right: Hero Image */}
+          <div className="flex-1 flex items-center justify-end w-full max-w-md">
+            <img
+              src="/assets/HeroPic.png"
+              alt="Team collaborating on SaaS lead generation"
+              className="w-full h-auto object-contain rounded-xl shadow-lg"
+              loading="eager"
+              width={340}
+              height={260}
+            />
+          </div>
         </section>
 
         {/* Features Section */}
