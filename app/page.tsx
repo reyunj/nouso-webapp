@@ -55,9 +55,9 @@ export default function HomePage() {
       </Head>
       <main className="bg-white min-h-screen">
         {/* Hero Section (Two-Column) */}
-        <section className="max-w-7xl mx-auto px-4 py-12 md:py-20 flex flex-col md:flex-row items-center md:justify-between">
+        <section className="max-w-7xl mx-auto px-4 py-8 sm:py-12 md:py-20 flex flex-col-reverse md:flex-row items-center md:justify-between gap-8 md:gap-0">
           {/* Left: Text Content */}
-          <div className="flex-1 text-left max-w-xl">
+          <div className="flex-1 w-full text-left max-w-xl mb-8 md:mb-0">
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#1a2233] mb-6 leading-tight">
               B2B Lead Generation<br />for SaaS and Finance Companies
             </h1>
@@ -87,11 +87,11 @@ export default function HomePage() {
             </ul>
           </div>
           {/* Right: Hero Image */}
-          <div className="flex-1 flex items-center justify-end w-full max-w-md">
+          <div className="flex-1 w-full flex items-center justify-center md:justify-end max-w-md mb-8 md:mb-0">
             <img
               src="/assets/HeroPic.png"
               alt="Team collaborating on SaaS lead generation"
-              className="w-full h-auto object-contain rounded-xl shadow-lg"
+              className="w-full max-w-xs sm:max-w-sm md:max-w-md h-auto object-contain rounded-xl shadow-lg"
               loading="eager"
               width={340}
               height={260}
@@ -100,24 +100,58 @@ export default function HomePage() {
         </section>
 
         {/* Features Section */}
-        <section className="py-12 md:py-16 px-4 sm:px-6 max-w-5xl mx-auto">
-          <h2 className="text-2xl sm:text-3xl font-bold mb-8 text-center">Why Choose Nousu?</h2>
-          <div className="grid gap-8 md:gap-10 md:grid-cols-2">
-            <div>
+        <section className="py-12 md:py-16 max-w-7xl mx-auto px-4">
+          <h2 className="text-2xl sm:text-3xl font-bold mb-8 text-left">Why Choose Nousu?</h2>
+          <div className="grid gap-8 sm:gap-10 md:grid-cols-2 lg:grid-cols-4">
+            <div className="flex flex-col items-center text-center">
+              <img src="/assets/multi-channel.png" alt="Multi-Channel Outreach" className="w-32 h-32 object-contain mb-4" loading="lazy" />
               <h3 className="text-lg sm:text-xl font-semibold mb-2">Multi-Channel Outreach</h3>
               <p className="text-gray-700">We combine personalised cold email, cold calling, and LinkedIn to reach real decision-makers across SaaS and finance.</p>
             </div>
-            <div>
+            <div className="flex flex-col items-center text-center">
+              <img src="/assets/setup-strategy.png" alt="Full Setup & Strategy" className="w-32 h-32 object-contain mb-4" loading="lazy" />
               <h3 className="text-lg sm:text-xl font-semibold mb-2">Full Setup & Strategy</h3>
               <p className="text-gray-700">We handle your domain setup, warm-up, ICP research, list building, and message testing — all before launch.</p>
             </div>
-            <div>
+            <div className="flex flex-col items-center text-center">
+              <img src="/assets/appointment.png" alt="Live Appointment Setting" className="w-32 h-32 object-contain mb-4" loading="lazy" />
               <h3 className="text-lg sm:text-xl font-semibold mb-2">Live Appointment Setting</h3>
               <p className="text-gray-700">Our team calls your prospects, qualifies them, and books meetings straight into your calendar with people ready to talk.</p>
             </div>
-            <div>
+            <div className="flex flex-col items-center text-center">
+              <img src="/assets/campaign.png" alt="Ongoing Campaign Optimisation" className="w-32 h-32 object-contain mb-4" loading="lazy" />
               <h3 className="text-lg sm:text-xl font-semibold mb-2">Ongoing Campaign Optimisation</h3>
               <p className="text-gray-700">We refine your sequences, targeting, and deliverability weekly to improve reply rates and maximise conversions.</p>
+            </div>
+          </div>
+        </section>
+
+        {/* Trusted Section */}
+        <section className="py-8 sm:py-10 md:py-14 bg-white flex flex-col md:flex-row items-center md:justify-between max-w-7xl mx-auto px-4 gap-8 md:gap-16">
+          <div className="flex-1 flex justify-center">
+            <img
+              src="/assets/trusted.png"
+              alt="Trusted by Leading Companies"
+              className="w-full max-w-lg h-auto object-contain"
+              loading="lazy"
+            />
+          </div>
+          <div className="flex-1 w-full max-w-xl text-left mt-8 md:mt-0">
+            <h2 className="text-2xl md:text-3xl font-bold mb-4">Handled by Humans,<br className='hidden md:block'/> Trusted by C-Suites</h2>
+            <p className="mb-6 text-gray-700 text-base md:text-lg">Every campaign is run by real salespeople in Sydney, not offshore juniors or automation bots. We speak directly to founders, GMs, and heads of sales. Our job is to open conversations with the right people and book meetings you actually want to take.</p>
+            <div className="flex flex-wrap gap-6 sm:gap-8 mt-6">
+              <div className="flex flex-col items-center">
+                <svg width="32" height="32" fill="none" aria-hidden="true"><rect width="32" height="32" rx="8" fill="#111"/><path d="M10 14h12M10 18h12M10 10h12" stroke="#fff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/></svg>
+                <span className="text-xs mt-2">All-in-One</span>
+              </div>
+              <div className="flex flex-col items-center">
+                <svg width="32" height="32" fill="none" aria-hidden="true"><rect width="32" height="32" rx="8" fill="#111"/><rect x="10" y="10" width="12" height="12" rx="2" fill="#fff"/></svg>
+                <span className="text-xs mt-2">File Sharing</span>
+              </div>
+              <div className="flex flex-col items-center">
+                <svg width="32" height="32" fill="none" aria-hidden="true"><rect width="32" height="32" rx="8" fill="#111"/><path d="M16 10v12M10 16h12" stroke="#fff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/></svg>
+                <span className="text-xs mt-2">Free up your sales team</span>
+              </div>
             </div>
           </div>
         </section>
