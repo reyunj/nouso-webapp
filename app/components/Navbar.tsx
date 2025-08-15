@@ -7,7 +7,7 @@ const navLinks = [
   { href: "/price", label: "Pricing Plans" },
   { href: "/services", label: "Services" },
   { href: "/blog", label: "Blog" },
-  { href: "/book", label: "Contact Us" },
+  { href: "/contact", label: "Contact Us" },
 ];
 
 const Navbar: React.FC = () => {
